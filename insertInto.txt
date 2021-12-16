@@ -1,0 +1,3 @@
+insert into s1(x) select random() * 100 from generate_series(1, 15894);
+insert into s2(y) select random() * 100 from generate_series(1, 9000);
+insert into s3(z) select random() * 100 from generate_series(1, 20000);

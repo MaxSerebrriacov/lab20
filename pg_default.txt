@@ -1,0 +1,8 @@
+alter table s1 set tablespace pg_default;
+alter table s2 set tablespace pg_default;
+alter table s3 set tablespace pg_default;
+
+drop tablespace lab20;
+drop tablespace lab20nfs;
+drop tablespace lab20iscsi;
+drop tablespace lab20sshfs;

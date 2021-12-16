@@ -1,0 +1,9 @@
+create tablespace lab20 owner "user" location '/home/postgres/tablespace/freespace/lab20';
+create tablespace lab20sshfs owner "user" location '/home/postgres/tablespace/sshfs';
+create tablespace lab20nfs owner "user" location '/home/postgres/tablespace/nfs';
+create tablespace lab20iscsi owner "user" location '/home/postgres/tablespace/iscsi';
+
+create table s1(x int);
+alter table s1 set tablespace lab20;
+create table s2(y int) tablespace lab20nfs;
+create table s3(z int) tablespace lab20iscsi;
